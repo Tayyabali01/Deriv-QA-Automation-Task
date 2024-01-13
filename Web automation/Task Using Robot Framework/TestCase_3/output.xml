@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-01-13T17:21:45.979831" rpa="false" schemaversion="5">
+<suite id="s1" name="Logout" source="C:\Deriv QA Automation Task\Web automation\Task Using Robot Framework\TestCase_3\Logout\Logout.robot">
+<test id="s1-t1" name="Performing Logout" line="14">
+<kw name="Open Browser And Maximize">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:21:46.301974" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-13T17:21:46.301974" elapsed="11.791491"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-13T17:21:58.094483" elapsed="0.112491"/>
+</kw>
+<status status="PASS" start="2024-01-13T17:21:46.301974" elapsed="11.905000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T17:22:03.207572" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T17:21:58.206974" elapsed="5.000598"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:03.352243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Logout%20Page_Screenshots/URL_Successfully_Opened.png"&gt;&lt;img src="Logout%20Page_Screenshots/URL_Successfully_Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T17:22:03.207572" elapsed="0.144671"/>
+</kw>
+<arg>URL_Successfully_Opened</arg>
+<status status="PASS" start="2024-01-13T17:22:03.207572" elapsed="0.144671"/>
+</kw>
+<kw name="Perform Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:03.352243" level="INFO">Typing text 'admin' into text field 'xpath://input[@placeholder='Username']'.</msg>
+<arg>xpath://input[@placeholder='Username']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T17:22:03.352243" elapsed="0.136104"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T17:22:06.488539" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T17:22:03.488347" elapsed="3.000192"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:06.488539" level="INFO">Typing text 'admin123' into text field 'xpath://input[@placeholder='Password']'.</msg>
+<arg>xpath://input[@placeholder='Password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T17:22:06.488539" elapsed="0.132397"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T17:22:09.621408" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T17:22:06.620936" elapsed="3.000472"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:09.621408" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T17:22:09.621408" elapsed="0.085540"/>
+</kw>
+<status status="PASS" start="2024-01-13T17:22:03.352243" elapsed="6.356708"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T17:22:14.716674" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T17:22:09.715301" elapsed="5.001373"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:14.882025" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Logout%20Page_Screenshots/UserloginSuccessfully.png"&gt;&lt;img src="Logout%20Page_Screenshots/UserloginSuccessfully.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T17:22:14.716674" elapsed="0.166351"/>
+</kw>
+<arg>UserloginSuccessfully</arg>
+<status status="PASS" start="2024-01-13T17:22:14.716674" elapsed="0.166351"/>
+</kw>
+<kw name="Perform Logout">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:14.884026" level="INFO">Clicking element 'xpath://span[@class='oxd-userdropdown-tab']'.</msg>
+<arg>xpath://span[@class='oxd-userdropdown-tab']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T17:22:14.884026" elapsed="0.072862"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T17:22:17.957360" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T17:22:14.956888" elapsed="3.000472"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:18.165112" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Logout%20Page_Screenshots/Perform%20Logout.png"&gt;&lt;img src="Logout%20Page_Screenshots/Perform%20Logout.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T17:22:17.957360" elapsed="0.207752"/>
+</kw>
+<arg>Perform Logout</arg>
+<status status="PASS" start="2024-01-13T17:22:17.957360" elapsed="0.207752"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:18.165112" level="INFO">Clicking element 'xpath://a[normalize-space()='Logout']'.</msg>
+<arg>xpath://a[normalize-space()='Logout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T17:22:18.165112" elapsed="1.065534"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T17:22:24.231881" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T17:22:19.230646" elapsed="5.001235"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T17:22:24.353198" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Logout%20Page_Screenshots/Logout%20Successfully.png"&gt;&lt;img src="Logout%20Page_Screenshots/Logout%20Successfully.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T17:22:24.231881" elapsed="0.121317"/>
+</kw>
+<arg>Logout Successfully</arg>
+<status status="PASS" start="2024-01-13T17:22:24.231881" elapsed="0.121317"/>
+</kw>
+<status status="PASS" start="2024-01-13T17:22:14.884026" elapsed="9.469172"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-13T17:22:24.353198" elapsed="2.359539"/>
+</kw>
+<status status="PASS" start="2024-01-13T17:21:46.301974" elapsed="40.410763"/>
+</test>
+<status status="PASS" start="2024-01-13T17:21:45.979831" elapsed="40.732906"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Logout">Logout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

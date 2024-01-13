@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-01-13T20:42:42.262473" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Deriv QA Automation Task\Web automation\Task Using Robot Framework\TestCase_1\Login Page\test_login.robot">
+<test id="s1-t1" name="Successful Login" line="14">
+<kw name="Open Browser And Maximize">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:42:42.584087" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-13T20:42:42.584087" elapsed="10.257600"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-13T20:42:52.841687" elapsed="0.126395"/>
+</kw>
+<status status="PASS" start="2024-01-13T20:42:42.584087" elapsed="10.383995"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T20:42:57.971603" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T20:42:52.971082" elapsed="5.000521"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:42:58.111482" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login%20Page_Screenshots/URL_Successfully_Opened.png"&gt;&lt;img src="Login%20Page_Screenshots/URL_Successfully_Opened.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T20:42:57.971603" elapsed="0.139879"/>
+</kw>
+<arg>URL_Successfully_Opened</arg>
+<status status="PASS" start="2024-01-13T20:42:57.971603" elapsed="0.139879"/>
+</kw>
+<kw name="Perform Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:42:58.111482" level="INFO">Typing text 'admin' into text field 'xpath://input[@placeholder='Username']'.</msg>
+<arg>xpath://input[@placeholder='Username']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T20:42:58.111482" elapsed="0.139377"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T20:43:01.251418" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T20:42:58.250859" elapsed="3.000559"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:43:01.377682" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login%20Page_Screenshots/UserName_Added.png"&gt;&lt;img src="Login%20Page_Screenshots/UserName_Added.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T20:43:01.251418" elapsed="0.126264"/>
+</kw>
+<arg>UserName_Added</arg>
+<status status="PASS" start="2024-01-13T20:43:01.251418" elapsed="0.126264"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:43:01.377682" level="INFO">Typing text 'admin123' into text field 'xpath://input[@placeholder='Password']'.</msg>
+<arg>xpath://input[@placeholder='Password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T20:43:01.377682" elapsed="0.153898"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T20:43:04.532093" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T20:43:01.531580" elapsed="3.000513"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:43:04.661279" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login%20Page_Screenshots/Password_Added.png"&gt;&lt;img src="Login%20Page_Screenshots/Password_Added.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T20:43:04.532093" elapsed="0.129186"/>
+</kw>
+<arg>Password_Added</arg>
+<status status="PASS" start="2024-01-13T20:43:04.532093" elapsed="0.129186"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:43:04.661279" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-13T20:43:04.661279" elapsed="0.100874"/>
+</kw>
+<status status="PASS" start="2024-01-13T20:42:58.111482" elapsed="6.651310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-13T20:43:09.763009" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-13T20:43:04.762792" elapsed="5.000217"/>
+</kw>
+<kw name="Capture Screenshot">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-13T20:43:09.935211" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login%20Page_Screenshots/UserloginSuccessfully.png"&gt;&lt;img src="Login%20Page_Screenshots/UserloginSuccessfully.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-13T20:43:09.763009" elapsed="0.173223"/>
+</kw>
+<arg>UserloginSuccessfully</arg>
+<status status="PASS" start="2024-01-13T20:43:09.763009" elapsed="0.173223"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-13T20:43:09.936807" elapsed="2.522990"/>
+</kw>
+<status status="PASS" start="2024-01-13T20:42:42.584087" elapsed="29.875710"/>
+</test>
+<status status="PASS" start="2024-01-13T20:42:42.262473" elapsed="30.197324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Login">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
